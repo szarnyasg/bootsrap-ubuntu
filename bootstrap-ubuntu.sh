@@ -42,11 +42,12 @@ EOF
 
 sudo apt update
 sudo apt upgrade -y
-sudo apt install -y vim silversearcher-ag cloc git zip docker maven julia nmon
+sudo apt install -y docker vim silversearcher-ag cloc git zip zstd maven julia nmon git cmake gcc g++
 
 # JDK8
 curl -s "https://get.sdkman.io" | bash
 sdk install java 8.0.272.hs-adpt
+sdk install java 11.0.7.hs-adpt
 
 sudo gpasswd -a $USER docker
 newgrp docker
